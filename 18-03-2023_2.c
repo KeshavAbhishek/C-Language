@@ -12,7 +12,6 @@ int main(){
         {
             printf("%d\n", dataset[i][j]);
         }
-        
     }
     
     return 0;
