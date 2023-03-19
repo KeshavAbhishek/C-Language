@@ -12,6 +12,14 @@ per unit.
 #include <stdio.h>
 
 int main(){
-    
+    float EOQ, R, S, I;
+    printf("Total yearly production requirement (R) = ");
+    scanf("%f", &R);
+    printf("Set-up cost per order (S) = ");
+    scanf("%f", &S);
+    printf("Inventory carrying cost per unit (I) = ");
+    scanf("%f", &I);
+    EOQ = (2*R*S)/I;
+    printf("\nEconomic Order Quantity = %f", EOQ);
     return 0;
 }
