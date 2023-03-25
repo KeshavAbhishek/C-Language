@@ -49,7 +49,6 @@ int main()
 					printf("%d ", arr[i]);
 					i++;
 				} while (i<=top);
-				
 			}
 			else{
 				printf("No value to traverse.");
@@ -61,3 +60,46 @@ int main()
 
 	return 0;
 }
+
+/*
+------
+1. Push
+2. Pop
+3. Traverse
+
+Enter choice : 1
+Enter value : 25
+
+------
+1. Push
+2. Pop
+3. Traverse
+
+Enter choice : 1
+Enter value : 30
+
+------
+1. Push
+2. Pop
+3. Traverse
+
+Enter choice : 1
+Enter value : 35
+
+------
+1. Push
+2. Pop
+3. Traverse
+
+Enter choice : 2
+
+Element removed : 35
+
+------
+1. Push
+2. Pop
+3. Traverse
+
+Enter choice : 3
+25 30
+*/
