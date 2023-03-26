@@ -17,44 +17,44 @@ int main()
 
 		switch (choice)
 		{
-		case 1:
-			if(size - 1 == top){
-				printf("Can't push value. Stack is full.");
-				exit(0);
-			}
-			else{
-				printf("Enter value : ");
-				scanf("%d", &data);
-				arr[top+1]=data;
-				top++;
-			}
-			break;
+			case 1:
+				if(size - 1 == top){
+					printf("Can't push value. Stack is full.");
+					exit(0);
+				}
+				else{
+					printf("Enter value : ");
+					scanf("%d", &data);
+					arr[top+1]=data;
+					top++;
+				}
+				break;
 
-		case 2:
-			if(top == -1){
-				printf("Stack is empty. Value can't be popped.");
-				exit(0);
-			}
-			else{
-				printf("\nElement removed : %d\n", arr[top]);
-				top--;
-			}
-			break;
+			case 2:
+				if(top == -1){
+					printf("Stack is empty. Value can't be popped.");
+					exit(0);
+				}
+				else{
+					printf("\nElement removed : %d\n", arr[top]);
+					top--;
+				}
+				break;
 
-		case 3:
-			if(top>=0){
-				i=0;
-				do
-				{
-					printf("%d ", arr[i]);
-					i++;
-				} while (i<=top);
-			}
-			else{
-				printf("No value to traverse.");
-				exit(0);
-			}
-			break;
+			case 3:
+				if(top>=0){
+					i=0;
+					do
+					{
+						printf("%d ", arr[i]);
+						i++;
+					} while (i<=top);
+				}
+				else{
+					printf("No value to traverse.");
+					exit(0);
+				}
+				break;
 		};
 	}
 
