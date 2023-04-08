@@ -10,10 +10,9 @@ Aspect related to functions
 
 #include <stdio.h>
 
-// Defined a function
+// Declaration and defination of function.
 int addMe(int a, int b){
-    int sum = a+b;
-    return sum;
+    return a+b;
 }
 
 int main(){
