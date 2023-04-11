@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notes C</title>
+    <title>PS Notes PDF</title>
     <style>
         *{
             padding: 0;
@@ -17,49 +17,113 @@
             justify-content: center;
             flex-direction: column;
         }
-        iframe{
-            width: 75%;
-            height: 100vh;
-        }
 
         h1{
             text-align: center;
-            padding: 10px 0;
-            display: block;
-            width: 100%;
             font-weight: bolder;
             font-size: 2rem;
             font-family: 'Times New Roman', Times, serif;
+            border: 5px solid red;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 15px;
+            background: pink;
         }
 
-        @media only screen and (max-width: 700px) {
-            iframe{
-                width: 100%;
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        @keyframes width {
+            0%{
+                width: 25vw;
+            }
+            100%{
+                width: 50vw;
             }
         }
+
+
+        @keyframes widthLess {
+            0%{
+                width: 50vw;
+            }
+            100%{
+                width: 25vw;
+            }
+        }
+
+        h1:hover{
+            width: 50vw;
+            animation-name: width;
+            animation-duration: 0.5s;
+        }
+
+        h1:not(hover){
+            animation-name: widthLess;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        }
+
+        div{
+            padding: 10px 0;
+            width: 95%;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 2.5em;
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width:700px){
+            @keyframes width {
+                0%{
+                    width: 50vw;
+                }
+                100%{
+                    width: 75vw;
+                }
+            }
+
+
+            @keyframes widthLess {
+                0%{
+                    width: 75vw;
+                }
+                100%{
+                    width: 50vw;
+                }
+            }
+
+            h1:hover{
+                width: 50vw;
+                animation-name: width;
+                animation-duration: 0.5s;
+            }
+
+            h1:not(hover){
+                animation-name: widthLess;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <h1>Exp 1</h1>
-    <br><br>
-    <iframe src="./Assignment C Pdf Text/C Assign 1.pdf" frameborder="0"></iframe>
-    <br>
-    <h1>Exp 2</h1>
-    <br><br>
-    <iframe src="./Assignment C Pdf Text/C Assign 2.pdf" frameborder="0"></iframe>
-    <br>
-    <h1>Exp 3</h1>
-    <br><br>
-    <iframe src="./Assignment C Pdf Text/C Exp 3.pdf" frameborder="0"></iframe>
-    <br>
-    <h1>Exp 4</h1>
-    <br><br>
-    <iframe src="./Assignment C Pdf Text/C Exp 4.pdf" frameborder="0"></iframe>
-    <br>
-    <h1>Exp 5</h1>
-    <br><br>
-    <iframe src="./Assignment C Pdf Text/C Exp 5.pdf" frameborder="0"></iframe>
-    <br>
+    <div>PS NOTES</div>
+    <hr>
+    <a href="./Assignment C Pdf Text/C Assign 1.pdf" target="_blank"><h1>Exp 1</h1></a>
+    <a href="./Assignment C Pdf Text/C Assign 2.pdf" target="_blank"><h1>Exp 2</h1></a>
+    <a href="./Assignment C Pdf Text/C Exp 3.pdf" target="_blank"><h1>Exp 3</h1></a>
+    <a href="./Assignment C Pdf Text/C Exp 4.pdf" target="_blank"><h1>Exp 4</h1></a>
+    <a href="./Assignment C Pdf Text/C Exp 5.pdf" target="_blank"><h1>Exp 5</h1></a>
+    
+    <!-- <embed src="./Assignment C Pdf Text/C Assign 1.pdf" frameborder="0"></embed> -->
+    <!-- <embed src="./Assignment C Pdf Text/C Assign 2.pdf" frameborder="0"></embed> -->
+    <!-- <embed src="./Assignment C Pdf Text/C Exp 3.pdf" frameborder="0"></embed> -->
+    <!-- <embed src="./Assignment C Pdf Text/C Exp 4.pdf" frameborder="0"></embed> -->
+    <!-- <embed src="./Assignment C Pdf Text/C Exp 5.pdf" frameborder="0"></embed> -->
 
 </body>
 </html>
