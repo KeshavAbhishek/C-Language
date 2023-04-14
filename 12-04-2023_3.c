@@ -2,19 +2,17 @@
 
 #include <stdio.h>
 
-void factorial(int n, int mul){
-    if(n>0){
-        mul *= n;
-        n = n-1;
-        factorial(n, mul);
+int factorial(int n){
+    if(n==0){
+        return 1;
     }
     else{
-        printf("Factorial = %d", mul);
+        return n * factorial(n-1);
     }
 }
 
 int main(){
     int a=7;
-    factorial(a, 1);
+    printf("%d", factorial(a));
     return 0;
 }
