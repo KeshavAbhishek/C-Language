@@ -1,6 +1,6 @@
 /*
 WAP to print the following pattern using indirect recursion.
-                
+
                 * * * * * * * * * *
                 # # # # # # # # # #
 
@@ -11,47 +11,29 @@ Establish indirect recursion between these two separate functions.
 
 #include <stdio.h>
 
-int i = 0;
-int count = 0;
+void fun1(int n);
+void fun2(int n);
 
-void hashPrinter();
+void fun2(int n)
+{
+    if(n==10){printf("\n");}
+    if (n ==0){return;}
+    else if(n<=10)
+    {printf("# ");fun1(n-1);}
+    else{printf("* ");fun1(n - 1);}
+}
 
-void starPrinter(){
-    if(count>10){
-        if(count>=15){
-            return 0;
-        }
-        printf("# ");
-        hashPrinter();
-        count += 1;
-    }
-    else{
-        printf("* ");
-        count += 1;
-        if(count==10){
-            printf("\n");
-        }
-        hashPrinter();
-    }
-};
+void fun1(int n)
+{
+    
+    if(n==10){printf("\n");}
+    if (n ==0){return;}
+    else if(n<=10){printf("# ");fun2(n-1);}
+    else{printf("* ");fun2(n - 1);}
+}
 
-void hashPrinter(){
-    if(count<=10){
-        printf("* ");
-        count += 1;
-        if(count==10){
-            printf("\n");
-        }
-        starPrinter();
-    }
-    else{
-        printf("# ");
-        count += 1;
-        starPrinter();
-    }
-};
-
-int main(){
-    starPrinter();
+int main()
+{
+    fun1(20);
     return 0;
 }
