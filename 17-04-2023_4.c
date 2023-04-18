@@ -17,9 +17,8 @@ void fun2(int n);
 void fun2(int n)
 {
     if(n==10){printf("\n");}
-    if (n ==0){return;}
-    else if(n<=10)
-    {printf("# ");fun1(n-1);}
+    if (n == 0){return;}
+    else if(n<=10){printf("# ");fun1(n-1);}
     else{printf("* ");fun1(n - 1);}
 }
 
@@ -27,7 +26,7 @@ void fun1(int n)
 {
     
     if(n==10){printf("\n");}
-    if (n ==0){return;}
+    if (n == 0){return;}
     else if(n<=10){printf("# ");fun2(n-1);}
     else{printf("* ");fun2(n - 1);}
 }
