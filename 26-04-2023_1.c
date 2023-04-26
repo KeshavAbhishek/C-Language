@@ -7,7 +7,7 @@ int main(){
     int max = *(ptr);
     for (int i = 0; i < 8; i++)
     {
-        if(max < *(ptr+i)){
+        if( *(ptr+i) > max ){
             max = *(ptr+i);
         }
     }
