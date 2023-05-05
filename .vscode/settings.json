@@ -5,6 +5,7 @@
         "cstdlib": "c",
         "stdio.h": "c",
         "string.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "strings.h": "c"
     }
 }

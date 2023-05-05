@@ -27,5 +27,7 @@ int main()
 
     printf("\nMax : %d", *max);
 
+    free(array);
+
     return 0;
 }
