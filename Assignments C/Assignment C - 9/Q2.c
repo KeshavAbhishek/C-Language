@@ -10,24 +10,15 @@ struct Distance
 
 
 int main(){
-    struct Distance d[2];
+    struct Distance d1, d2;
 
-    for (int i = 0; i < 2; i++)
-    {
-        printf("Enter feet : ");
-        scanf("%d", &d[i].feet);
-        
-        printf("Enter inch : ");
-        scanf("%d", &d[i].inch);
-
-        printf("\n");
-    }
+    d1.feet = 12;
+    d1.inch = 12;
     
-    int feet1 = d[0].feet, inch1 = d[0].inch;
+    d2.feet = 12;
+    d2.inch = 12;
 
-    int feet2 = d[1].feet, inch2 = d[1].inch;
-
-    int feet = feet1+feet2, inch = inch1+inch2;
+    int feet = d1.feet+d2.feet, inch = d1.inch+d2.inch;
 
     if(inch>=12){
         feet += (inch/12);

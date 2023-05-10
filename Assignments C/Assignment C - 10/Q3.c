@@ -4,7 +4,7 @@
 
 int main() {
     FILE *file;
-    char filename[100], c;
+    char c;
     int count = 0;
 
     file = fopen("text.txt", "r");
