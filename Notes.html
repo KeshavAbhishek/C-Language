@@ -242,6 +242,7 @@
                 }
                 else{
                     document.getElementById("link").href=`${fileLocation[index]}`;
+                    document.getElementById("link").download=`${fileLocation[index].split('/')[2]}`;
                     document.getElementById("link").click();
                 }
             });
