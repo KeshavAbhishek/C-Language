@@ -15,7 +15,19 @@ int main(){
     int n;
     printf("Enter a number : ");
     scanf("%d", &n);
-    if(n==1 | n%2==0 | n%3==0 | n%5==0){
+    int count = 0;
+
+    for (int i = 2; i < n+1; i++)
+    {
+        if (i==2 | i==3 | i==5){}
+        else{
+            if(n%i==0){
+                count += 1;
+            }
+        }
+    }
+
+    if(count == 0){
         printf("The number is ugly-prime.");
     }
     else{
