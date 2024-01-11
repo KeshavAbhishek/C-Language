@@ -1,6 +1,6 @@
-# Code to Copy text in clipboard in *Python*
+# Code to Copy text in clipboard in **Python**
 ___
-```
+
 # importing the library 
 
 import pyperclip as pc 
@@ -21,4 +21,3 @@ text2 = pc.paste()
   
 
 print(text2)
-```
